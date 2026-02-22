@@ -3,107 +3,105 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kanimozhi Gopal | Java Developer</title>
+<title>Kanimozhi Gopal | Java Backend Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
 
-    body {
-        background: #f5f7fa;
-        color: #333;
-        line-height: 1.6;
-    }
+body {
+    background: #f9fafb;
+    color: #333;
+}
 
-    header {
-        background: #1e3a8a;
-        color: white;
-        padding: 40px 20px;
-        text-align: center;
-    }
+header {
+    height: 100vh;
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-    header h1 {
-        font-size: 36px;
-    }
+header h1 {
+    font-size: 48px;
+}
 
-    header p {
-        font-size: 18px;
-        margin-top: 10px;
-    }
+header p {
+    font-size: 20px;
+    margin: 15px 0;
+}
 
-    nav {
-        background: #111827;
-        text-align: center;
-        padding: 10px;
-    }
+.btn {
+    padding: 12px 25px;
+    background: white;
+    color: #1e3a8a;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
 
-    nav a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-        font-size: 16px;
-    }
+.btn:hover {
+    background: #111827;
+    color: white;
+}
 
-    nav a:hover {
-        color: #3b82f6;
-    }
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
 
-    section {
-        padding: 40px 20px;
-        max-width: 900px;
-        margin: auto;
-    }
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #1e3a8a;
+}
 
-    h2 {
-        margin-bottom: 20px;
-        color: #1e3a8a;
-        text-align: center;
-    }
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
 
-    .card {
-        background: white;
-        padding: 20px;
-        margin: 15px 0;
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
 
-    ul {
-        list-style-type: square;
-        margin-left: 20px;
-    }
+.card:hover {
+    transform: translateY(-10px);
+}
 
-    footer {
-        background: #1e3a8a;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin-top: 30px;
-    }
+ul {
+    list-style: none;
+}
 
-    .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background: #3b82f6;
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-        margin-top: 10px;
-    }
+ul li {
+    padding: 8px 0;
+}
 
-    .btn:hover {
-        background: #2563eb;
-    }
-
-    @media (max-width: 600px) {
-        header h1 {
-            font-size: 28px;
-        }
-    }
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 </style>
 </head>
 
@@ -112,63 +110,80 @@
 <header>
     <h1>Kanimozhi Gopal</h1>
     <p>Java Backend Developer | Spring Boot | MySQL</p>
+    <a href="#projects" class="btn">View My Work</a>
 </header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
 
 <section id="about">
     <h2>About Me</h2>
     <div class="card">
         <p>
-            I am a Computer Science graduate passionate about backend development 
-            and building real-world applications using Java and Spring Boot. 
-            I enjoy solving problems and continuously improving my coding skills.
+            I am a passionate Computer Science graduate focused on backend development.
+            I build structured and scalable applications using Java and Spring Boot.
+            I enjoy solving real-world problems and continuously improving my technical skills.
         </p>
     </div>
 </section>
 
 <section id="skills">
     <h2>Technical Skills</h2>
-    <div class="card">
-        <ul>
-            <li>Java</li>
-            <li>Spring Boot</li>
-            <li>JDBC</li>
-            <li>MySQL</li>
-            <li>Git & GitHub</li>
-            <li>REST API Development</li>
-        </ul>
+    <div class="card-container">
+        <div class="card">
+            <h3>Programming</h3>
+            <ul>
+                <li>Java</li>
+                <li>Basic JavaScript</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Backend</h3>
+            <ul>
+                <li>Spring Boot</li>
+                <li>JDBC</li>
+                <li>REST API</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Database & Tools</h3>
+            <ul>
+                <li>MySQL</li>
+                <li>Git & GitHub</li>
+                <li>Maven</li>
+            </ul>
+        </div>
     </div>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
+    <div class="card-container">
 
-    <div class="card">
-        <h3>Student Management System</h3>
-        <p>Java + MySQL application performing CRUD operations using JDBC.</p>
-        <a href="#" class="btn">View Project</a>
+        <div class="card">
+            <h3>Student Management System</h3>
+            <p>Java + MySQL CRUD application using JDBC.</p>
+            <br>
+            <a href="#" class="btn">View Code</a>
+        </div>
+
+        <div class="card">
+            <h3>Employee Management REST API</h3>
+            <p>Spring Boot REST API integrated with MySQL database.</p>
+            <br>
+            <a href="#" class="btn">View Code</a>
+        </div>
+
     </div>
-
-    <div class="card">
-        <h3>Employee Management REST API</h3>
-        <p>Spring Boot REST API with MySQL database integration.</p>
-        <a href="#" class="btn">View Project</a>
-    </div>
-
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
     <div class="card">
         <p>Email: yourmail@gmail.com</p>
-        <p>GitHub: github.com/yourusername</p>
+        <p>GitHub: https://github.com/kanigopal</p>
         <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <br>
+        <a href="#" class="btn">Download Resume</a>
     </div>
 </section>
 
